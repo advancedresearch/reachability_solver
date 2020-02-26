@@ -1,0 +1,16 @@
+[package]
+name = "reachability_solver"
+version = "0.1.0"
+authors = ["Sven Nilsen <bvssvni@gmail.com>"]
+edition = "2018"
+keywords = ["reachability", "solver", "theorem", "proving", "reasoning"]
+description = "A linear reachability solver for directional edges"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/advancedresearch/reachability_solver.git"
+homepage = "https://github.com/advancedresearch/reachability_solver"
+documentation = "https://docs.rs/reachability_solver"
+categories = ["algorithms", "science"]
+
+[dependencies]
+linear_solver = "0.2.2"
