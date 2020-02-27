@@ -2,6 +2,12 @@
 
 A linear reachability solver for directional edges
 
+WARNING: This is called "linear solver" in the sense of linear logic,
+because it uses linear solver under the hood.
+This is intended as an example for logic study.
+Do not use in production, as the runtime and memory complexity of this algorithm is
+far from optimal.
+
 This solver takes a list of pair of numbers and produces a new list of pair of numbers.
 
 For example:
