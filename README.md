@@ -32,8 +32,8 @@ The maze in the book is very complex and changes over time (a static maze in spa
 so I will use a much simpler example instead.
 
 In the final round of the Triwizard Tournament, Harry starts at `1` and Cedric starts at `2`.
-Both Harry and Cedric try to reach The Goblet of Fire at `5`.
- We want to know whether Harry and Cedric can reach The Goblet of Fire at the same time.
+Both Harry and Cedric try to reach Triwizard Cup at `5`.
+ We want to know whether Harry and Cedric can reach The Triwizard Cup at the same time.
 It turns out that they can, because it is reachable for both Harry and Cedric:
 
 ```text
@@ -52,7 +52,7 @@ So, Cedric gets stuck in a dead end of the maze.
 This is a higher order maze problem, which can be expressed as following:
 
 ```text
-(Harry -> Goblet) ∧ (Cedric -> Goblet)
+(Harry -> TriwizardCup) ∧ (Cedric -> TriwizardCup)
 ```
 
 Here, the `∧` operator means logical AND.
@@ -63,18 +63,18 @@ These kinds of problems are harder to solve directly on the non-transformed maze
 without knowing the details of the higher order problem.
 
 Assume that some manipulative person (I won't tell you who)
-wants Harry to reach The Goblet of Fire, but not Cedric.
+wants Harry to reach Triwizard Cup, but not Cedric.
 One can express this goal as:
 
 ```text
-(Harry -> Goblet) ∧ ¬(Cedric -> Goblet)
+(Harry -> TriwizardCup) ∧ ¬(Cedric -> TriwizardCup)
 ```
 
 It is possible to determine whether this is true from a transformed maze,
 without knowing the internal configurations of how space-time positions are connected.
 
 However, if the person places a magical gate that only lets the first person through in the only
-path toward the goal, then it is not possible to determine whether Harry will reach The Goblet of Fire.
+path toward the goal, then it is not possible to determine whether Harry will reach Triwizard Cup.
 One must analyze this problem using the original maze and some extra information,
 such as which path takes shorter time and how fast each wizard champion runs.
 This problem is undecidable with respect to the solver algorithm.
