@@ -151,9 +151,11 @@ pub fn solve(edges: Vec<[usize; 2]>) -> Vec<[usize; 2]> {
 }
 
 fn infer(cache: &HashSet<[usize; 2]>, facts: &[[usize; 2]]) -> Option<Inference<[usize; 2]>> {
-    for ea in facts {
+    // Loop backwards to improve runtime performance a little,
+    // since new inferences is often based on new facts.
+    for ea in facts.iter().rev() {
         let [a, b] = ea;
-        for eb in facts {
+        for eb in facts.iter().rev() {
             let [c, d] = eb;
             if b == c {
                 let p = [*a, *d];
