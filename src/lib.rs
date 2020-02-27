@@ -69,7 +69,7 @@
 //! without knowing the details of the higher order problem.
 //!
 //! Assume that some manipulative person (I won't tell you who)
-//! wants Harry to reach Triwizard Cup, but not Cedric.
+//! wants Harry to reach the Triwizard Cup, but not Cedric.
 //! One can express this goal as:
 //!
 //! ```text
