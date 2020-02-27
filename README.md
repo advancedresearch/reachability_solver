@@ -38,8 +38,8 @@ The maze in the book is very complex and changes over time (a static maze in spa
 so I will use a much simpler example instead.
 
 In the final round of the Triwizard Tournament, Harry starts at `1` and Cedric starts at `2`.
-Both Harry and Cedric try to reach Triwizard Cup at `5`.
- We want to know whether Harry and Cedric can reach The Triwizard Cup at the same time.
+Both Harry and Cedric try to reach the Triwizard Cup at `5`.
+We want to know whether Harry and Cedric can reach the Triwizard Cup at the same time.
 It turns out that they can, because it is reachable for both Harry and Cedric:
 
 ```text
@@ -80,9 +80,9 @@ It is possible to determine whether this is true from a transformed maze,
 without knowing the internal configurations of how space-time positions are connected.
 
 However, if the person places a magical gate that only lets the first person through in the only
-path toward the goal, then it is not possible to determine whether Harry will reach Triwizard Cup.
+path toward the goal, then it is not possible to determine whether Harry will reach the Triwizard Cup.
 One must analyze this problem using the original maze and some extra information,
-such as which path takes shorter time and how fast each wizard champion runs.
+such as which path takes shorter time and how fast each wizard school champion runs.
 This problem is undecidable with respect to the solver algorithm.
 
 ### Graph Theory
