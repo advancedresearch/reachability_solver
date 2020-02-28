@@ -34,3 +34,26 @@ pub fn terminal(a: &[[usize; 2]], b: &mut Vec<[usize; 2]>) {
         }
     }
 }
+
+/// Measures the cardinality of a maze by removing initial nodes repeatedly,
+/// until there are no edges left.
+///
+/// The cardinality is the same whether initial or terminal nodes are removed.
+///
+/// The cardinality of an empty maze is zero.
+///
+/// The cardinality measures the maximum number of steps required to
+/// reach any goal, plus one.
+pub fn cardinality(x: &[[usize; 2]]) -> usize {
+    use crate::solve;
+
+    if x.len() == 0 {return 0}
+    let mut b: Vec<[usize; 2]> = x.into();
+    let mut n = 1;
+    while b.len() > 0 {
+        let a = solve(b.clone());
+        initial(&a, &mut b);
+        n += 1;
+    }
+    n
+}

@@ -4,14 +4,15 @@
 
 /// Creates a directional line of length `n`, starting at `0`.
 ///
-/// For example:
+/// For example, `dir_line(4)`:
 ///
 /// ```text
 /// 0 → 1 → 2 → 3
 /// ```
 pub fn dir_line(n: usize) -> Vec<[usize; 2]> {
     let mut r = vec![];
-    for i in 0..n {
+    if n == 0 {return r}
+    for i in 0..n-1 {
         r.push([i, i+1])
     }
     r
