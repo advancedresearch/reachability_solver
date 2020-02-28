@@ -146,6 +146,7 @@ use std::collections::HashSet;
 
 pub mod etch;
 pub mod shapes;
+pub mod map;
 
 /// Returns a list of edges that describes reachability
 /// from initial objects to terminal objects.

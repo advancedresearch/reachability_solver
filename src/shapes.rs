@@ -1,6 +1,4 @@
-//! ### Shapes
-//!
-//! Some functions to create various shapes of mazes.
+//! ### Shapes - Some functions to create various shapes of mazes.
 
 /// Creates a directional line of length `n`, starting at `0`.
 ///

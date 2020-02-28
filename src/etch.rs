@@ -1,4 +1,4 @@
-//! ### Etching
+//! ### Etching - A technique to iterate through a maze by removing nodes
 //!
 //! Etching is a technique to iterate through a maze by
 //! removing either initial or terminal nodes.
