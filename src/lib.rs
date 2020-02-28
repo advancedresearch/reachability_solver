@@ -144,6 +144,9 @@ use linear_solver::Inference::*;
 
 use std::collections::HashSet;
 
+pub mod etch;
+pub mod shapes;
+
 /// Returns a list of edges that describes reachability
 /// from initial objects to terminal objects.
 pub fn solve(edges: Vec<[usize; 2]>) -> Vec<[usize; 2]> {
